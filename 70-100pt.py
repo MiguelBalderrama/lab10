@@ -14,3 +14,17 @@
 
 # Minus 5pts if your code has no comments
 # Minus 10pts if you only commit once to github
+from Tkinter import *
+root = Tk()
+# Create the canvas widget
+drawpad = Canvas(root, background='white')
+drawpad.grid(row=0, column=1)
+# create_oval(x,y,width,height,fill color)
+#oval = drawpad.create_oval(10, 50, 100, 100, fill='green')
+#create_square(top left x,top left y, bottom right x, bottom right y, fill color)
+square = drawpad.create_rectangle(50,200,150,100, fill='red')
+#create_line(top left x,top left y, bottom right x, bottom right y, fill color)
+line = drawpad.create_line(150, 100, 100, 50)
+line = drawpad.create_line(50, 100, 100, 50)
+
+root.mainloop()
